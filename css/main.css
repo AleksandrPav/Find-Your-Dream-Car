@@ -29,12 +29,28 @@ img{
     background: #030915;
     width: 100%;
     height: 805px;
-    background-image: url(/img/Ellipse\ 1.svg), url(/img/Ellipse\ 2.svg);
+    background-image: url(/img/Ellipse\ 1.png), url(/img/Ellipse\ 2.png);
     background-size: auto;
   background-position: right bottom, left top;
   background-repeat: no-repeat;
 }
 
+.ellips--one{
+     position: absolute;
+    top: 100px;
+      right: 625px;
+      width: 50px;
+      height: 50px;
+
+}
+
+.ellips--two{
+    position: absolute;
+    top: 650px;
+      left: 120px;
+      width: 100px;
+      height: 100px;
+}
 
 .conteiner{
     width: 1200px;
@@ -52,18 +68,20 @@ display: flex;
 
 header nav {
     float: right;
-    width: 50%;
+    width: auto;
 }
 
 header nav ul{
     list-style: none;
-    display: flex;
-    justify-content: space-between;
 }
 
 header nav ul li {
     display: inline-block;
 }
+header nav ul li:not(:first-child){
+    margin-left: 40px;
+}
+
 header nav ul li.active::after{
     content: '';
     display: block;
@@ -88,17 +106,20 @@ header nav ul li:not(.active) a:hover {
 
 }
 
-.logo{
-    width: 200px;
-    height: 200px;
+
+.logo--img{
+      width: 200px;
+  height: auto;
+  transition: transform 0.3s ease;
+
 }
 
-.logo img{
-    width: 200px; /* Задает ширину */
-      height: auto; /* Автоматически подстраивает высоту */
-      margin: 10px; /* Добавляет отступы */
-      float: left; /* Располагает слева */
+.logo--img:hover {
+  transform: scale(1.05);
 }
+
+
+
 
 .hero{
     padding: 0px 170px 0px 70px;
@@ -115,7 +136,7 @@ header nav ul li:not(.active) a:hover {
 }
 
 .page-subtext {
-     font-family: popins;
+     font-family: poppins;
     font-size: 18px;
   font-weight: regular;
   color: #CACACA;
@@ -133,7 +154,7 @@ header nav ul li:not(.active) a:hover {
   padding: 25px 30px;
   border: 3px solid #FCFCFC;
   border-radius: 12px;
-  font-family: popins;
+  font-family: poppins;
     font-size: 28px;
   font-weight: regular;
   cursor: pointer;
@@ -152,3 +173,35 @@ header nav ul li:not(.active) a:hover {
       width: 800px;
       height: 4500px;
 }
+
+
+.car--grid{
+    margin-top: 165px;
+    padding: 0px 150px;
+}
+.car--grid-list{
+    display: flex;
+    justify-content: space-between;
+}
+
+.car--grid-item{
+    border: 2px solid #D9D9D9;
+    border-radius: 20px;
+    padding: 20px 30px;
+    text-align: center;
+}
+
+.car--grid-item:not(:first-child){
+    margin-left: 30px;
+}
+
+
+.car--title{
+    font-family: poppins;
+    font-size: 20px;
+  font-weight: medium;
+  color: #6F6F6F;
+  text-align: center ;
+  margin-top: 28px;
+}
+
