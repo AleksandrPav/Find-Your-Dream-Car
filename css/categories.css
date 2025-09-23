@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap');
+
+
+.categories{
+    margin-top: 130px;
+    padding: 0 80px;
+}
+.categories-title{
+    text-align: center;
+    color: #272727;
+    font-family: Sansita;
+    font-size: 64px;
+    font-weight: regular;
+    text-shadow: #000000 0px 3px 0;
+    letter-spacing: 1px;
+}
+.catigories-nav{
+    margin-top: 30px;
+}
+.catigories-items{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border-bottom: 2px solid #D9D9D9;
+    padding-bottom: 24px;
+}
+.catigories-item:not(:first-child){
+    margin-left: 36px;
+    text-align: center;
+}
+
+.featured-car{
+    background-image: url(/img/Rectangle\ 54.png) ;
+    background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 52px;
+
+}
+
+.featured-car--img{
+    text-align: center;
+
+}

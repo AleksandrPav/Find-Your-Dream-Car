@@ -1,0 +1,29 @@
+.car--grid{
+    margin-top: 165px;
+    padding: 0px 150px;
+}
+.car--grid-list{
+    display: flex;
+    justify-content: space-between;
+}
+
+.car--grid-item{
+    border: 2px solid #D9D9D9;
+    border-radius: 20px;
+    padding: 20px 30px;
+    text-align: center;
+}
+
+.car--grid-item:not(:first-child){
+    margin-left: 30px;
+}
+
+
+.car--title{
+    font-family: poppins;
+    font-size: 20px;
+  font-weight: medium;
+  color: #6F6F6F;
+  text-align: center ;
+  margin-top: 28px;
+}

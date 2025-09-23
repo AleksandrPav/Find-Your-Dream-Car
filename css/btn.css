@@ -1,0 +1,20 @@
+.btn{
+    width: 240px;
+    height: 80px;
+    margin-top: 27px;
+    background-color: transparent;
+  color: #F3F4F6;
+  border: 3px solid #FCFCFC;
+  border-radius: 12px;
+  font-family: poppins;
+    font-size: 28px;
+  font-weight: regular;
+  cursor: pointer;
+  transition: 0.3s ease;
+  text-align: center;
+
+}
+.btn:hover{
+    background-color:#ffffff;
+    color: #030915;
+}
