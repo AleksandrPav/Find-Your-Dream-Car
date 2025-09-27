@@ -29,20 +29,59 @@
     text-align: center;
 }
 
-.featured-car{
-    background-image: url(/img/Rectangle\ 54.png) ;
-    background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  border-radius: 8px;
-   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 52px;
+.catigories-item--variant{
+text-align: center;
+color: #313131;
+font-family: Poppins;
+    font-size: 24px;
+    font-weight: regular;
 
+}
+.catigories-item--variant.active::after{
+    content: '';
+    display: block;
+    width: 92px;
+    height: 5px;
+    background: #0E317D;
+    border-radius: 15px;
+    position: relative;
+    top: 24px;
+    left: 0px;
+}
+.catigories-item--variant{
+    transition: 0.3s ease;
+}
+
+.catigories-item--variant:not(.active):hover {
+    border-bottom: 5px solid#030915;
+    border-radius: 2px;
+}
+
+.featured-car{
+background-image: url(/img/Rectangle\ 54.png) ;
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+border-radius: 8px;
+margin-top: 52px;
+padding: 44px 0px 0px 34px;
+display: flex;
+
+}
+.featured-car--text{
+    display: flex;
+    flex-direction: column;
+}
+.featured-car--title{
+color: #EBEBEB;
+font-family: Sansita;
+    font-size: 40px;
+    font-weight: regular;
+    margin-bottom: 34px;
 }
 
 .featured-car--img{
-    text-align: center;
+    width: 710px;
+    height: auto;
 
 }
